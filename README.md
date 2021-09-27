@@ -1,8 +1,8 @@
 # Terraform Samples
 
-Samples to get started with Terraform.
+Samples to play with with Terraform.
 
-See [everyday cheatsheet](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/terraform.md) for more information about Terraform.
+→ [everyday cheatsheet](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/hashicorp/terraform.md) to know more about Terraform
 
 ## Content
 
