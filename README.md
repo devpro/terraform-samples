@@ -1,6 +1,6 @@
 # Terraform samples
 
-Examples of small project to play with with Terraform. Look at this [cheatsheet](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/hashicorp/terraform.md) to know more about Terraform.
+Examples of small projects to play with with Terraform. Look at this [cheatsheet](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/hashicorp/terraform.md) to know more about Terraform.
 
 ## Content
 
