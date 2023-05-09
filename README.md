@@ -5,5 +5,6 @@ Examples of small projects to play with with [Terraform](https://everyday-cheats
 ## Content
 
 Name                                       | Purpose
--------------------------------------------|---------------------------------
-[`docker-nginx`](./docker-nginx/README.md) | Run latest nginx image in Docker
+-------------------------------------------|-----------------------------------
+[`azure-vm`](./azure-vm/README.md)         | Create VM on Azure
+[`docker-nginx`](./docker-nginx/README.md) | Run latest nginx image with Docker

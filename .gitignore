@@ -8,3 +8,8 @@ terraform.tfstate.backup
 
 # Terraform plans
 *.tfplan
+
+# Local files
+.env
+setenv.bat
+terraform.tfvars

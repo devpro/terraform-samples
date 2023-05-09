@@ -1,6 +1,6 @@
-# Nginx in Docker with Terraform
+# Nginx container with Docker & Terraform
 
-Run latest nginx image in a container (inspired by [Get Started - Docker](https://developer.hashicorp.com/terraform/tutorials/docker-get-started)).
+Use Terraform to run latest [Nginx image](https://hub.docker.com/_/nginx/) in a container with Docker (inspired by [Get Started - Docker](https://developer.hashicorp.com/terraform/tutorials/docker-get-started)).
 
 ## Steps
 
