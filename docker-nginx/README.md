@@ -1,43 +1,40 @@
 # Nginx in Docker with Terraform
 
-Run latest nginx image in Docker.
-
-Example taken from Katacoda: [Deploy NGINX container using Terraform](https://www.katacoda.com/courses/terraform/deploy-nginx)
+Run latest nginx image in a container (inspired by [Get Started - Docker](https://developer.hashicorp.com/terraform/tutorials/docker-get-started)).
 
 ## Steps
 
 ```bash
-# edit main.tf (look in particular to the Windows workaround and the port number)
-vi main.tf
-
-# look for Terraform configuration and load providers
+# configures Terraform and loads providers
 terraform init
 
-# review existing running containers
+# displays current containers
 docker ps
 
-# review the plan
+# displays the plan
 terraform plan
 
 # stores the plan locally
 terraform plan -out config.tfplan
 
-# provision
+# provisions the resource
 terraform apply
 
-# look at the new containers
+# makes sure the nginx container is running
 docker ps
 
-# open http://localhost:8080/ and make sure you see the page "Welcome to nginx!"
+# makes sure you see the page "Welcome to nginx!"
 curl http://localhost:8080/
 
-# look at a human-readable output of the state
+# displays a human-readable output of the state
 terraform show
 
-# remove
+# lists resources
+terraform state list
+
+# applies a change by specifying a variable
+terraform apply -var "container_count=2"
+
+# removes the resource
 terraform destroy
 ```
-
-## Details
-
-* Terraform providers: [kreuzwerker/docker](https://registry.terraform.io/providers/kreuzwerker/docker) ([kreuzwerker/terraform-provider-docker](https://github.com/kreuzwerker/terraform-provider-docker))
