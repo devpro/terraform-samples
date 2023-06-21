@@ -5,11 +5,20 @@ and [Azure RM Provider Examples](https://github.com/hashicorp/terraform-provider
 
 ## Steps
 
-* Set environment variable to access to Azure (`.env.example` gives the variables to set)
+* Create a service principal, aka Azure AD Application (store the client ID and client secret)
 
 ```bash
 az login
 az ad sp create-for-rbac --name "<myusername>-tf-may2023" --role="Contributor" --scopes="/subscriptions/<subscription_id>"
+```
+
+* Set ARM environment variables
+
+```bash
+export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"
+export ARM_CLIENT_SECRET="12345678-0000-0000-0000-000000000000"
+export ARM_TENANT_ID="10000000-0000-0000-0000-000000000000"
+export ARM_SUBSCRIPTION_ID="20000000-0000-0000-0000-000000000000"
 ```
 
 * Get local files
